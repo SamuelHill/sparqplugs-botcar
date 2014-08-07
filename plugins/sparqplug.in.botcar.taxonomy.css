@@ -1,0 +1,17 @@
+.bc-tax-column {
+	height: 100%;
+	overflow: scroll;
+	width: 30%;
+	border-right:1px solid #CCC;
+	float: left;
+}
+
+.bc-tax-column li {
+	display: block;
+	font-size:12px;
+	padding-left: 4px;
+}
+
+.bc-tax-column .selected {
+	background:#EEE;
+}

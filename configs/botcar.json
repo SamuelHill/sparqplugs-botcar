@@ -1,0 +1,25 @@
+{
+	"name":"botcar",
+	"description":"Botanical specimen information from Lorde and Catesby's trips to SC",
+	"source":"http://localhost:3030/ds/",
+	"citekitSRC":"svc-folio-cts",
+	"prefixes":{
+		"cts:":"http://www.homermultitext.org/cts/rdf/",
+		"cite:":"http://www.homermultitext.org/cite/rdf/"
+	},
+	"variables":{
+		"?species":"<urn:cite:botcar:species> botcar:possesses ?species",
+		"?families":"<urn:cite:botcar:family> botcar:possesses ?families"
+	},
+	"cts":{
+		"types": {
+			"Editions":"cts:Edition",
+			"Collections":"cite:CiteCollection",
+			"Works":"cts:Work",
+			"Text Groups":"cts:TextGroup",
+			"Translations": "cts:Translation",
+			"Image Collections": "cite:ImageArchive"
+		}
+	},
+	"plugins":["sparqplug-in-text","sparqplug-in-cts-browser","sparqplug-out-json","sparqplug-in-botcar-taxonomy","sparqplug-out-citekit","sparqplug-out-table"]
+}
